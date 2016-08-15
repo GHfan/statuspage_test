@@ -6,237 +6,323 @@
 		<title>Status</title>
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
-		<link rel="stylesheet" href="milligram.min.css">
 		<link rel="stylesheet" href="style.css">
-		<link rel="icon" href="https://raw.githubusercontent.com/pyupio/statuspage/master/template/favicon.png">
+		
+    <link rel="icon" href="images/favicon.png">
 	</head>
 	<body>
+
 		<main class="wrapper">
-			<header class="main-header">
-				<div class="main-navblock">
-					<div>
-						<a href="http://cloudinsight.oneapm.com/index.html" class="logo-container">
-							<div class="oneapm-logo"></div>
-						</a>
+      <header class="main-header">
+        <div class="main-navblock">
+          <div>
+            <a href="http://cloudinsight.oneapm.com/index.html" class="logo-container">
+              <div class="oneapm-logo"></div>
+            </a>
+          </div>
+          <a href="#" class="burger-wrapper">
+            <div class="burger"></div>
+          </a>
+          <div class="nav-container">
+            <ul class="nav-list">
+              <li>
+                <a href="http://cloudinsight.oneapm.com/product/product.html">产品</a>
+              </li>
+              <li>
+                <a href="http://docs-ci.oneapm.com/" target="_blank">文档</a>
+              </li>
+              <li>
+                <a href="http://cloudinsight.oneapm.com/about/group.html">关于</a>
+              </li>
+              <li>
+                <a href="http://blog.oneapm.com/tags-Cloud+Insight.html" target="_blank">技术博客</a>
+              </li>
+            </ul>
+            <ul class="login-list">
+              <li>
+                <a href="http://user.oneapm.com/pages/v2/login" class="btn outline-dark">登录</a>
+              </li>
+              <li>
+                <a href="https://user.oneapm.com/pages/v2/signup" class="btn inside-yellow">注册</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+
+			<section class="container" id="main">
+				
+					
+					<div class="panel degraded performance">
+            性能降低 on 仪表盘.
 					</div>
-					<a href="#" class="burger-wrapper">
-						<div class="burger"></div>
-					</a>
-					<div class="nav-container">
-						<ul class="nav-list">
-							<li>
-								<a href="http://cloudinsight.oneapm.com/product/product.html">产品</a>
-							</li>
-							<li>
-								<a href="http://docs-ci.oneapm.com/" target="_blank">文档</a>
-							</li>
-							<li>
-								<a href="http://cloudinsight.oneapm.com/about/group.html">关于</a>
-							</li>
-							<li>
-								<a href="http://blog.oneapm.com/tags-Cloud+Insight.html" target="_blank">技术博客</a>
-							</li>
-						</ul>
-						<ul class="login-list">
-							<li>
-								<a href="http://user.oneapm.com/pages/v2/login" class="btn outline-dark">登录</a>
-							</li>
-							<li>
-								<a href="https://user.oneapm.com/pages/v2/signup" class="btn inside-yellow">注册</a>
-							</li>
-						</ul>
+					
+					<div class="panel major outage">
+            外星人入侵 on 报警引擎.
 					</div>
-				</div>
-			</header>
-			<section class="container" id="main">		
-				<div class="panel degraded performance">性能降低 on 仪表盘.</div>
-				<div class="panel major outage">外星人入侵 on 报警引擎.</div>
-				<div class="panel investigating">检查维护 on 探针下载.</div>
+					
+					<div class="panel investigating">
+            检查维护 on 探针下载.
+					</div>
+					
+				
+
 				<h4>Systems</h4>
 				<ul class="systems">
+					
 					<li>
 						Webhook <span class="status operational">运行正常</span>
 					</li>
+					
 					<li>
 						云厂商监控 <span class="status operational">运行正常</span>
 					</li>
+					
 					<li>
 						仪表盘 <span class="status degraded performance">性能降低</span>
 					</li>
+					
 					<li>
 						地球防御体系 <span class="status major outage">外星人入侵</span>
 					</li>
+					
 					<li>
 						官网 <span class="status operational">运行正常</span>
 					</li>
+					
 					<li>
 						报警引擎 <span class="status major outage">外星人入侵</span>
 					</li>
+					
 					<li>
 						探针下载 <span class="status investigating">检查维护</span>
 					</li>
+					
 				</ul>
+
 				<h4>Incidents</h4>
-				<div class="incident">
-					<span class="date">2016-08-11 18:07:14 UTC+8</span>
-					<span class="label investigating float-right">检查维护</span>
-					<span class="label system float-right">探针下载</span>
-					<hr/>
-					<span class="title">北京地区光缆被挖断</span>
-					<p>As you move through the chapter, I recommend that you type the examples in a REPL and run them. Programming in a new language is a skill, and just like yodeling or synchronized swimming, you have to practice to learn it.</p>
-				</div>
-				<div class="incident">
-					<span class="date">2016-08-11 18:05:20 UTC+8</span>
-						<span class="label major outage float-right">外星人入侵</span>
-						<span class="label system float-right">报警引擎</span>
-					<hr/>
-					<span class="title">incidents 规范：设计部请参考 </span>
-					<p>incident 部分默认最多显示三行，若内容超过三行则折叠，点击才会全部显示。字号、字体与官网正文字体保持统一。</p>
-				</div>
-				<div class="incident">
-					<span class="date">2016-08-11 18:03:42 UTC+8</span>
-						<span class="label degraded performance float-right">性能降低</span>
-						<span class="label system float-right">仪表盘</span>
-					<hr/>
-					<span class="title">仪表盘加载慢：部分用户反映仪表盘加载不出来</span>
-					<p>十分抱歉，后端数据聚合出现 bug，部分用户仪表盘暂时无法显示数据，我们将在半小时内修复。</p>
-				</div>
-				<div class="incident">
-					<span class="date">2016-08-11 18:00:35 UTC+8</span>
-					<span class="label operational float-right">解决</span>
-					<span class="label system float-right">官网</span>
-					<hr/>
-					<span class="title">阿里云故障：华北地区阿里云用户无法看到监控数据</span>
-					<p>十分抱歉，由于阿里云故障， 2016 年 8 月 10 日中午 13:00 – 15:00（北京时间 GMT+08）阿里云无法正常使用，故 Cloudinsight 提供的监控服务也收到影响，预计将在 x 小时内解决，数据不会丢失。</p>
-					<p><em>Update 2016-08-11 18:08:16</em><br/>
-						紧急切换阿里云节点，当前已恢复。
-					</p>
-				</div>
-				<div class="incident">
-					<span class="date">2016-08-11 12:11:23 UTC+8</span>
-					<span class="label major outage float-right">外星人入侵</span>
-					<span class="label system float-right">地球防御体系</span>
-					<hr/>
-					<span class="title">中文支持的statuspage</span>
-					<p>Mozolotov.</p>
-					<p><em>Update 2016-08-11 18:01:21</em><br/>
-						地球终极武器死炮忘开
-					</p>
-				</div>
-				<p style="font-size:12px;text-align:right;">Status page hosted by GitHub, generated with <a href="https://github.com/pyupio/statuspage">pyupio/statuspage</a></p>
+				
+					
+					<div class="incident">
+						<span class="date">2016-08-15 11:01:05 UTC+8</span>
+
+						
+							<span class="label operational float-right">解决</span>
+						
+						
+							<span class="label system float-right">报警引擎</span>
+						
+						<hr/>
+
+						<span class="title">编辑状态页样式</span>
+						<p>宋一杰说赶紧上线先用这个，以后再改，(づ￣ 3￣)づ</p>
+						
+					</div>
+					
+					<div class="incident">
+						<span class="date">2016-08-11 18:07:14 UTC+8</span>
+
+						
+							<span class="label investigating float-right">检查维护</span>
+						
+						
+							<span class="label system float-right">探针下载</span>
+						
+						<hr/>
+
+						<span class="title">北京地区光缆被挖断</span>
+						<p>As you move through the chapter, I recommend that you type the examples in a REPL and run them. Programming in a new language is a skill, and just like yodeling or synchronized swimming, you have to practice to learn it.</p>
+						
+					</div>
+					
+					<div class="incident">
+						<span class="date">2016-08-11 18:05:20 UTC+8</span>
+
+						
+							<span class="label major outage float-right">外星人入侵</span>
+						
+						
+							<span class="label system float-right">报警引擎</span>
+						
+						<hr/>
+
+						<span class="title">incidents 规范：设计部请参考 </span>
+						<p>incident 部分默认最多显示三行，若内容超过三行则折叠，点击才会全部显示。字号、字体与官网正文字体保持统一。</p>
+						
+					</div>
+					
+					<div class="incident">
+						<span class="date">2016-08-11 18:03:42 UTC+8</span>
+
+						
+							<span class="label degraded performance float-right">性能降低</span>
+						
+						
+							<span class="label system float-right">仪表盘</span>
+						
+						<hr/>
+
+						<span class="title">仪表盘加载慢：部分用户反映仪表盘加载不出来</span>
+						<p>十分抱歉，后端数据聚合出现 bug，部分用户仪表盘暂时无法显示数据，我们将在半小时内修复。</p>
+						
+					</div>
+					
+					<div class="incident">
+						<span class="date">2016-08-11 18:00:35 UTC+8</span>
+
+						
+							<span class="label operational float-right">解决</span>
+						
+						
+							<span class="label system float-right">官网</span>
+						
+						<hr/>
+
+						<span class="title">阿里云故障：华北地区阿里云用户无法看到监控数据</span>
+						<p>十分抱歉，由于阿里云故障， 2016 年 8 月 10 日中午 13:00 – 15:00（北京时间 GMT+08）阿里云无法正常使用，故 Cloudinsight 提供的监控服务也收到影响，预计将在 x 小时内解决，数据不会丢失。</p>
+						
+							<p><em>Update 2016-08-11 18:08:16</em><br/>
+							紧急切换阿里云节点，当前已恢复。
+							</p>
+						
+					</div>
+					
+					<div class="incident">
+						<span class="date">2016-08-11 12:11:23 UTC+8</span>
+
+						
+							<span class="label major outage float-right">外星人入侵</span>
+						
+						
+							<span class="label system float-right">地球防御体系</span>
+						
+						<hr/>
+
+						<span class="title">中文支持的statuspage</span>
+						<p>Mozolotov.</p>
+						
+							<p><em>Update 2016-08-11 18:01:21</em><br/>
+							地球终极武器死炮忘开
+							</p>
+						
+					</div>
+					
+				
+
+        <p style="font-size:12px;text-align:right;">Status page hosted by GitHub, generated with <a href="https://github.com/pyupio/statuspage">pyupio/statuspage</a></p>
 			</section>
 		</main>
 	</body>
-	<div class="footer-nav-block">
-  		<div class="container">
-		    <div class="footer-nav">
-		      	<div class="footer-nav-col">
-		        	<ul class="footer-nav-list">
-		          		<li>
-		            		<a href="http://docs-ci.oneapm.com/quick-start/">文档</a>
-		          		</li>
-		          		<li>
-		            		<a href="http://docs-ci.oneapm.com/agent/">快速入门</a>
-		          		</li>
-				        <li>
-				            <a href="http://docs-ci.oneapm.com/platform/">安装配置</a>
-				        </li>
-				        <li>
-				           	<a href="http://docs-ci.oneapm.com/platform/">操作指南</a>
-				        </li>
-				        <li>
-				            <a href="http://docs-ci.oneapm.com/best-practise/">实践案例</a>
-				        </li>
-				        <li>
-				            <a href="http://docs-ci.oneapm.com/qa/">常见问题</a>
-				        </li>
-		        	</ul>
-		      	</div>
-		      	<div class="footer-nav-col">
-		        	<ul class="footer-nav-list">
-		          		<li>
-		            		<a href="http://cloudinsight.oneapm.com/product/product.html">产品</a>
-		          		</li>
-		          		<li>
-		            		<a href="http://cloudinsight.oneapm.com/product/product.html">基础组件监控</a>
-		         	 	</li>
-		          		<li>
-		            		<a href="http://cloudinsight.oneapm.com/product/api_sdk.html">API 与 SDK</a>
-		          		</li>
-		          		<li>
-		            		<a href="http://cloudinsight.oneapm.com/product/cialert.html">异常数据告警</a>
-		          		</li>
-		          		<li>
-		            		<a href="http://cloudinsight.oneapm.com/euro2016.html">数据化欧洲杯</a>
-		          		</li>
-		          		<li>
-		            		<a href="http://cloudinsight.oneapm.com/price.html">报价</a>
-		          		</li>
-		        	</ul>
-		      	</div>
-		      	<div class="footer-nav-col">
-			        <ul class="footer-nav-list">
-			          	<li><a href="http://cloudinsight.oneapm.com/about/group.html">关于</a></li>
-			          	<li><a href="http://cloudinsight.oneapm.com/about/group.html">团队介绍</a></li>
-			          	<li><a href="http://cloudinsight.oneapm.com/about/cooperation.html">合作伙伴</a></li>
-			        </ul>
-		      	</div>
-		    	</div>
-			    <div class="footer-support">
-			      	<ul class="footer-support-list">
-			        	<li><img src="images/footer/support.svg"></li>
-			        	<li class="support-title">技术支持</li>
-			        	<li class="support-mail">support@oneapm.com</li>
-			      	</ul>
-			    </div>
-			</div>
-		</div>
-		<div class="footer-copyright-block">
-		  	<div class="container">
-		    	<div class="copyright-link">
-		      		<div class="socialLink">
-		        		<a href="https://github.com/cloudinsight/cloudinsight.github.io" class="social-btn github" target="_blank">
-		          			<img src="images/footer/github.svg">
-		          			<p class="hidden-xs hidden-xxs">Github</p>
-		        		</a>
-		      		</div>
-		      		<div class="socialLink">
-		        		<a href="#" class="social-btn qr">
-		          			<img src="images/footer/wechat.svg">
-		          			<p class="hidden-xs hidden-xxs">微信</p>
-		          			<div class="QRcode">
-	            				<img src="images/footer/wechatQR.svg">
-	          				</div>
-		        		</a>
-		      		</div>
-		      		<div class="socialLink">
-		        		<a href="http://my.oschina.net/cloudinsight/blog" class="social-btn" target="_blank">
-		          			<img src="images/footer/oschina.svg">
-		          			<p class="hidden-xs hidden-xxs">开源中国</p>
-		        		</a>
-		      		</div>
-		      		<div class="socialLink">
-		        		<a href="http://www.weibo.com/cloudinsight" class="social-btn" target="_blank">
-		          			<img src="images/footer/weibo.svg">
-		          			<p class="hidden-xs hidden-xxs">微博</p>
-		        		</a>
-		      		</div>
-		    	</div>
-		    	<div class="copyright-text">
-		      		<a href="http://www.oneapm.com/">
-		        		<img src="images/footer/cilogomulti_btn.svg" class="footer-logo">
-		      		</a>
-		      		<p class="copyright">
-		          		Copyright © 2008-
-		          		<span id="cr-end-time"></span>
-		          		北京蓝海讯通科技股份有限公司
-		          		<br>
-		          		<a href="http://www.miibeian.gov.cn/" target="_blank">京ICP备14028342号-2</a>
-		          		京公网安备 11010802016192
-		        		<br>
-		      		</p>
-		    	</div>
-		  	</div>
-		</div>
-	</div>
+  <div class="footer-nav-block">
+      <div class="container">
+        <div class="footer-nav">
+            <div class="footer-nav-col">
+              <ul class="footer-nav-list">
+                  <li>
+                    <a href="http://docs-ci.oneapm.com/quick-start/">文档</a>
+                  </li>
+                  <li>
+                    <a href="http://docs-ci.oneapm.com/agent/">快速入门</a>
+                  </li>
+                <li>
+                    <a href="http://docs-ci.oneapm.com/platform/">安装配置</a>
+                </li>
+                <li>
+                    <a href="http://docs-ci.oneapm.com/platform/">操作指南</a>
+                </li>
+                <li>
+                    <a href="http://docs-ci.oneapm.com/best-practise/">实践案例</a>
+                </li>
+                <li>
+                    <a href="http://docs-ci.oneapm.com/qa/">常见问题</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-nav-col">
+              <ul class="footer-nav-list">
+                  <li>
+                    <a href="http://cloudinsight.oneapm.com/product/product.html">产品</a>
+                  </li>
+                  <li>
+                    <a href="http://cloudinsight.oneapm.com/product/product.html">基础组件监控</a>
+                </li>
+                  <li>
+                    <a href="http://cloudinsight.oneapm.com/product/api_sdk.html">API 与 SDK</a>
+                  </li>
+                  <li>
+                    <a href="http://cloudinsight.oneapm.com/product/cialert.html">异常数据告警</a>
+                  </li>
+                  <li>
+                    <a href="http://cloudinsight.oneapm.com/euro2016.html">数据化欧洲杯</a>
+                  </li>
+                  <li>
+                    <a href="http://cloudinsight.oneapm.com/price.html">报价</a>
+                  </li>
+              </ul>
+            </div>
+            <div class="footer-nav-col">
+              <ul class="footer-nav-list">
+                  <li><a href="http://cloudinsight.oneapm.com/about/group.html">关于</a></li>
+                  <li><a href="http://cloudinsight.oneapm.com/about/group.html">团队介绍</a></li>
+                  <li><a href="http://cloudinsight.oneapm.com/about/cooperation.html">合作伙伴</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-support">
+              <ul class="footer-support-list">
+                <li><img src="images/footer/support.svg"></li>
+                <li class="support-title">技术支持</li>
+                <li class="support-mail">support@oneapm.com</li>
+              </ul>
+          </div>
+      </div>
+    </div>
+    <div class="footer-copyright-block">
+        <div class="container">
+          <div class="copyright-link">
+              <div class="socialLink">
+                <a href="https://github.com/cloudinsight/cloudinsight.github.io" class="social-btn github" target="_blank">
+                    <img src="images/footer/github.svg">
+                    <p class="hidden-xs hidden-xxs">Github</p>
+                </a>
+              </div>
+              <div class="socialLink">
+                <a href="#" class="social-btn qr">
+                    <img src="images/footer/wechat.svg">
+                    <p class="hidden-xs hidden-xxs">微信</p>
+                    <div class="QRcode">
+                      <img src="images/footer/wechatQR.svg">
+                    </div>
+                </a>
+              </div>
+              <div class="socialLink">
+                <a href="http://my.oschina.net/cloudinsight/blog" class="social-btn" target="_blank">
+                    <img src="images/footer/oschina.svg">
+                    <p class="hidden-xs hidden-xxs">开源中国</p>
+                </a>
+              </div>
+              <div class="socialLink">
+                <a href="http://www.weibo.com/cloudinsight" class="social-btn" target="_blank">
+                    <img src="images/footer/weibo.svg">
+                    <p class="hidden-xs hidden-xxs">微博</p>
+                </a>
+              </div>
+          </div>
+          <div class="copyright-text">
+              <a href="http://www.oneapm.com/">
+                <img src="images/footer/cilogomulti_btn.svg" class="footer-logo">
+              </a>
+              <p class="copyright">
+                  Copyright © 2008-
+                  <span id="cr-end-time"></span>
+                  北京蓝海讯通科技股份有限公司
+                  <br>
+                  <a href="http://www.miibeian.gov.cn/" target="_blank">京ICP备14028342号-2</a>
+                  京公网安备 11010802016192
+                <br>
+              </p>
+          </div>
+        </div>
+    </div>
+  </div>
 </html>
