@@ -1,1 +1,1 @@
-Visit this site at https://GHfan.github.io/statuspage_test/
+Visit this site at https://yaiba.github.io/statuspage_test/
